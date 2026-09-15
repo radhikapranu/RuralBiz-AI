@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Financial Planning - RuralBiz AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🌱 RuralBiz AI
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="advisory.html">Business Advisor</a>
+            <a href="finance.html">Finance</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <section class="finance-section">
+
+        <div class="finance-container">
+
+            <div class="finance-heading">
+
+                <h1>Plan Your Business Finances 💰</h1>
+
+                <p>
+                    Estimate your project cost, funding requirement,
+                    loan amount and repayment plan.
+                </p>
+
+            </div>
+
+
+            <div class="finance-card">
+
+                <form id="financeForm">
+
+
+                    <div class="input-group">
+
+                        <label for="projectCost">
+                            Total Project Cost (₹)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="projectCost"
+                            placeholder="Example: 80000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="ownCapital">
+                            Your Available Capital (₹)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="ownCapital"
+                            placeholder="Example: 30000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="interestRate">
+                            Expected Interest Rate (%)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="interestRate"
+                            placeholder="Example: 6.5"
+                            min="0"
+                            step="0.1"
+                            value="6.5"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="loanTenure">
+                            Repayment Period (Years)
+                        </label>
+
+                        <select id="loanTenure" required>
+
+                            <option value="">
+                                Select repayment period
+                            </option>
+
+                            <option value="1">1 Year</option>
+
+                            <option value="2">2 Years</option>
+
+                            <option value="3">3 Years</option>
+
+                            <option value="5">5 Years</option>
+
+                            <option value="7">7 Years</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="moratorium">
+                            Moratorium Period
+                        </label>
+
+                        <select id="moratorium" required>
+
+                            <option value="">
+                                Select moratorium
+                            </option>
+
+                            <option value="0">
+                                None
+                            </option>
+
+                            <option value="3">
+                                3 Months
+                            </option>
+
+                            <option value="6">
+                                6 Months
+                            </option>
+
+                            <option value="12">
+                                12 Months
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-btn"
+                    >
+                        📊 Calculate Financial Plan
+                    </button>
+
+                </form>
+
+
+                <div class="finance-results">
+
+                    <h2>Your Financial Plan</h2>
+
+                    <div class="finance-result-grid">
+
+                        <div class="finance-result-card">
+
+                            <span>Project Cost</span>
+
+                            <strong>₹0</strong>
+
+                        </div>
+
+
+                        <div class="finance-result-card">
+
+                            <span>Own Contribution</span>
+
+                            <strong>₹0</strong>
+
+                        </div>
+
+
+                        <div class="finance-result-card">
+
+                            <span>Estimated Loan</span>
+
+                            <strong>₹0</strong>
+
+                        </div>
+
+
+                        <div class="finance-result-card">
+
+                            <span>Estimated EMI</span>
+
+                            <strong>₹0 / month</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="finance-note">
+
+                        ⚠️ These figures are illustrative estimates.
+                        Actual loan eligibility, interest rate and
+                        repayment terms depend on the applicable scheme,
+                        lender and borrower profile.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 RuralBiz AI |
+            AI-Powered Rural Business Advisory
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Advisor | RuralBiz AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🌱 RuralBiz <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="advisory.html">Business Advisor</a>
+            <a href="finance.html">Finance</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <section class="advisor-section">
+
+        <div class="advisor-container">
+
+            <div class="advisor-heading">
+
+                <p class="welcome-text">
+                    🤖 AI BUSINESS ADVISOR
+                </p>
+
+                <h1>
+                    Tell Us About Your Business Idea
+                </h1>
+
+                <p>
+                    Enter your location, budget, skills and resources
+                    to receive suitable business recommendations.
+                </p>
+
+            </div>
+
+
+            <div class="advisor-card">
+
+                <form id="advisorForm">
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>Village / Town</label>
+
+                            <input
+                                type="text"
+                                id="village"
+                                placeholder="Example: Nalgonda"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>District</label>
+
+                            <input
+                                type="text"
+                                id="district"
+                                placeholder="Example: Nalgonda"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>State</label>
+
+                        <select id="state" required>
+
+                            <option value="">
+                                Select your state
+                            </option>
+
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                            <option>Maharashtra</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Business Category</label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option>Agriculture</option>
+                            <option>Food Processing</option>
+                            <option>Retail Shop</option>
+                            <option>Dairy Business</option>
+                            <option>Handicrafts</option>
+                            <option>Services</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Available Capital (₹)</label>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            placeholder="Example: 100000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Your Skills</label>
+
+                        <textarea
+                            id="skills"
+                            placeholder="Example: Cooking, farming, tailoring..."
+                            rows="4"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Available Resources</label>
+
+                        <textarea
+                            id="resources"
+                            placeholder="Example: Land, shop space, equipment..."
+                            rows="4"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-btn"
+                    >
+                        🔍 Analyze My Business
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="advisor-info">
+
+                <div>
+                    📍
+                    <strong>Local Market</strong>
+                    <p>Understand your local opportunity.</p>
+                </div>
+
+                <div>
+                    📊
+                    <strong>Opportunity Score</strong>
+                    <p>Identify promising business options.</p>
+                </div>
+
+                <div>
+                    💰
+                    <strong>Financial Planning</strong>
+                    <p>Plan investment and funding.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            🌱 RuralBiz <span>AI</span>
+        </div>
+
+        <p>
+            Smart Ideas • Better Decisions • Stronger Rural Businesses
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
